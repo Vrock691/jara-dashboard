@@ -1,0 +1,2 @@
+WeasyPrint>=68,<70
+PyMuPDF>=1.26,<2

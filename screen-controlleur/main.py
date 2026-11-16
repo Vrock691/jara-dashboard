@@ -25,6 +25,7 @@ try:
     font18 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 18)
     font30 = ImageFont.truetype(os.path.join(picdir, 'Font.ttc'), 40)
     
+    """    
     # Drawing on the Horizontal image
     logging.info("1.Drawing on the Horizontal image...")
     Himage = Image.new('RGB', (epd.width, epd.height), 0xffffff)  # 255: clear the frame
@@ -47,7 +48,7 @@ try:
     draw.chord((200, 50, 250, 100), 0, 360, fill = 0)
     epd.display(epd.getbuffer(Himage))
     time.sleep(3)
-    
+
     # logging.info("2.Drawing on the Vertical image...")
     Himage = Image.new('RGB', (epd.height, epd.width), 0xffffff)  # 255: clear the frame
     draw = ImageDraw.Draw(Himage)
@@ -79,7 +80,12 @@ try:
     Himage = Image.open(os.path.join(picdir, '5in65f.bmp'))
     epd.display(epd.getbuffer(Himage))
     time.sleep(3)
-    
+    """
+
+    Himage = Image.open(os.path.join(picdir, '5in65f.bmp'))
+    epd.display(epd.getbuffer(Himage))
+    time.sleep(10)
+
     epd.Clear()
     logging.info("Goto Sleep...")
     epd.sleep()

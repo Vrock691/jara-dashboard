@@ -34,8 +34,7 @@ p {
 }
 
 .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 5px;
     padding: 0 5px;
     height: 428px;
@@ -54,6 +53,8 @@ p {
     flex-direction: column;
     gap: 5px;
     padding: 5px 0;
+    flex: 1;
+    min-width: 0;
 }
 
 .column>* {
@@ -102,8 +103,7 @@ p {
 }
 
 .weather-forecast-day {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) auto auto;
+    display: flex;
     align-items: center;
     gap: 5px;
     min-height: 30px;
@@ -113,6 +113,7 @@ p {
 
 .weather-forecast-day strong {
     color: #000;
+    flex: 1;
 }
 
 .weather-forecast-day [role="img"] {
