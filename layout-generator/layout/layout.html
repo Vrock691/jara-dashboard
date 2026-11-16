@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Frame</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <div class="top-bar">
+        <p>Connecté à internet - Mise à jour 14:30</p>
+    </div>
+    <div class="content">
+        <div class="column">
+            <section class="card weather-widget" aria-label="Météo actuelle">
+                <div class="weather-current">
+                    <span class="weather-icon" role="img" aria-label="Ensoleillé">☀️</span>
+                    <strong class="weather-temperature">22 °C</strong>
+                </div>
+                <p>Ensoleillé</p>
+                <p>Ressenti 24 °C · Vent 8 km/h</p>
+                <p>Min. 16 °C <span aria-hidden="true">·</span> Max. 25 °C</p>
+
+                <div class="weather-forecast" style="display: flex; flex-direction: column;">
+                    <div class="weather-forecast-day">
+                        <strong>Aujourd'hui</strong>
+                        <span role="img" aria-label="Partiellement nuageux">⛅</span>
+                        <span>17 °C / 23 °C</span>
+                    </div>
+                    <div class="weather-forecast-day">
+                        <strong>Demain</strong>
+                        <span role="img" aria-label="Partiellement nuageux">⛅</span>
+                        <span>17 °C / 23 °C</span>
+                    </div>
+                    <div class="weather-forecast-day">
+                        <strong>Après-demain</strong>
+                        <span role="img" aria-label="Ensoleillé">☀️</span>
+                        <span>18 °C / 26 °C</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="column">
+            <section class="card calendar-widget" aria-label="Calendrier">
+                <div class="calendar-day">
+                    <span class="calendar-weekday">Lundi</span>
+                    <span class="calendar-date">16</span>
+                    <span class="calendar-month">Novembre</span>
+                    <span class="calendar-year">2026</span>
+                </div>
+                <div class="calendar-content">
+                    <ul class="calendar-events">
+                        <li>Anglais | 13:00 - 16:00</li>
+                        <li>DevOps | 09:00 - 12:00</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="card rtm-widget" aria-label="Perturbations des transports">
+                <div class="rtm-line">
+                    <span class="rtm-line-name">M2</span>
+                    <span class="rtm-line-status">Aucune perturbation</span>
+                </div>
+                <div class="rtm-line">
+                    <span class="rtm-line-name">T3</span>
+                    <span class="rtm-line-status">Aucune perturbation</span>
+                </div>
+                <div class="rtm-line">
+                    <span class="rtm-line-name">15</span>
+                    <span class="rtm-line-status">Aucune perturbation</span>
+                </div>
+                <div class="rtm-line">
+                    <span class="rtm-line-name">15s</span>
+                    <span class="rtm-line-status">Aucune perturbation</span>
+                </div>
+                <div class="rtm-line">
+                    <span class="rtm-line-name">17</span>
+                    <span class="rtm-line-status">Aucune perturbation</span>
+                </div>
+            </section>
+            <section class="card mobility-widget" aria-label="Vélos et trottinettes disponibles">
+                <div class="mobility-count">
+                    <span>LeVelo</span>
+                    <strong>0 en station</strong>
+                </div>
+                <div class="mobility-count">
+                    <span>Lime</span>
+                    <strong>2 à 200m | 5 à 600m</strong>
+                </div>
+                <div class="mobility-count">
+                    <span>Voi</span>
+                    <strong>5 à 600m</strong>
+                </div>
+                <div class="mobility-count">
+                    <span>Pony</span>
+                    <strong>0 à 600m</strong>
+                </div>
+            </div>
+        </div>
 </body>
+
 </html>

@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "DMSans";
+    src: url("./fonts/DMSans-VariableFont_opsz,wght.ttf") format("truetype");
+}
+
+html {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body {
+    width: 600px;
+    height: 448px;
+    background-color: white;
+    font-family: "DMSans", sans-serif;
+}
+
+.top-bar {
+    height: 20px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-bottom: 1px solid #000;
+}
+
+p {
+    margin: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    padding: 0 5px;
+    height: 428px;
+}
+
+.card {
+    border-radius: 0;
+    border-color: #000;
+    border-width: 1px;
+    border-style: solid;
+    padding: 14px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.column>* {
+    flex: 1;
+}
+
+.weather-widget {
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-widget p {
+    color: black;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.weather-icon {
+    font-size: 50px;
+    line-height: 1;
+    margin-left: -6px;
+}
+
+.weather-temperature {
+    color: #000;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.weather-widget>p:first-of-type {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-forecast {
+    gap: 5px;
+    margin-top: auto;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+}
+
+.weather-forecast-day {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 5px;
+    min-height: 30px;
+    border-radius: 0;
+    color: black;
+}
+
+.weather-forecast-day strong {
+    color: #000;
+}
+
+.weather-forecast-day [role="img"] {
+    font-size: 22px;
+}
+
+.weather-forecast-day span:last-child {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.rtm-widget {
+    padding: 5px 14px;
+}
+
+.rtm-line {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+
+.rtm-line:last-child {
+    border-bottom: none;
+}
+
+.rtm-line-name {
+    font-weight: 700;
+}
+
+.rtm-line-status {
+    font-size: 0.9rem;
+}
+
+.calendar-content {
+    margin: 0;
+    padding: 0;
+}
+
+.calendar-events {
+    padding: 0;
+    padding-top: 5px;
+    padding-left: 14px;
+    margin: 0;
+}
+
+.calendar-day {
+    text-transform: uppercase;
+    font-weight: 600;
+}
