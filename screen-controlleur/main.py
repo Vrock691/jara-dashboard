@@ -82,12 +82,8 @@ try:
     time.sleep(3)
     """
 
-    Himage = Image.open(os.path.join(picdir, '5in65f.bmp'))
+    Himage = Image.open(os.path.join(picdir, 'layout.bmp'))
     epd.display(epd.getbuffer(Himage))
-    time.sleep(10)
-
-    epd.Clear()
-    logging.info("Goto Sleep...")
     epd.sleep()
     
 except IOError as e:
